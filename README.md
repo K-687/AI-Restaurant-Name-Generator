@@ -47,7 +47,7 @@ This project automates the process using **Large Language Models (LLMs)** and pr
  Frontend UI | Streamlit 
  Environment Management | python-dotenv 
  Containerization | Docker 
- Deployment | Docker Hub, Cloud (Render / AWS / Railway) 
+ Deployment | Docker Hub 
 
 ---
 
@@ -61,8 +61,8 @@ restaurant_name_generator/
 ├── requirements.txt         # Python dependencies
 ├── .env.example             # Template for environment variables
 ├── screenshots/
-│   ├── home.png
-│   └── output.png
+│   ├── image_1.png
+│   └── image_2.png
 ├── Dockerfile               # Container configuration
 └── README.md                # Project documentation
 ```
