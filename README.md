@@ -113,7 +113,7 @@ docker pull aravindvojjala/restaurant-ai
 
 ### Run Image
 ```bash
-docker run -p 8000:8000 -p 8501:8501 aravindvojjala/restaurant-ai
+docker run -p 8501:8501 --env-file .env aravindvojjala/restaurant-ai
 ```
 
 ## Stop container:
