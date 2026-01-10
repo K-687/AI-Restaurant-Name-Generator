@@ -6,47 +6,48 @@
 ![Cerebras](https://img.shields.io/badge/Cerebras-LLM-orange)
 ![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
 
-An **AI-powered web application** that generates **exactly ONE fancy restaurant name** based on a selected cuisine using **LangChain** and **Large Language Models (LLMs)**, delivered through an interactive **Streamlit UI**.
+An **AI-powered web application** that generates **creative and fancy restaurant names** based on cuisine type.  
+Built to demonstrate **full-stack AI development skills**, **LLM integration**, and **production-ready deployment** using Docker.
 
 ---
 
 ## 🚀 Project Overview
 
-Choosing a perfect restaurant name is often challenging and time-consuming.  
-This project provides an **AI-driven solution** that instantly generates **creative and fancy restaurant names** tailored to a specific cuisine.
+Choosing a memorable restaurant name is crucial for branding but often challenging.  
+This project automates the process using **Large Language Models (LLMs)** and provides **real-time name generation** through a clean **Streamlit interface**.
 
-The application is designed to be:
+**Highlights for recruiters:**
 
-- ✅ Simple  
-- ✅ Secure  
-- ✅ Scalable  
-- ✅ Docker & Cloud ready  
+- Full-stack AI application with **Python, Streamlit, LangChain, and Docker**  
+- Integrates **Cerebras/OpenAI-compatible LLM** via secure API  
+- Demonstrates **production-ready deployment skills**  
+- Emphasizes **secure API key management and containerization**
 
 ---
 
 ## 🧠 Key Features
 
-- 🍽️ Cuisine-based restaurant name generation  
-- 🧠 Powered by **LangChain Prompt Templates**
-- ⚡ Uses **Cerebras (OpenAI-compatible) LLM API**
-- 🎨 Clean and interactive **Streamlit Web UI**
-- 🔐 Secure API key management using `.env`
-- 🐳 Fully Dockerized
-- ☁️ Ready for Cloud deployment (AWS / Render / Railway)
+- 🎯 Generates **one unique restaurant name** per cuisine  
+- 🧠 LLM-powered with **LangChain Prompt Templates**  
+- ⚡ Integrates with **Cerebras LLM** for fast and reliable output  
+- 🎨 Clean **Streamlit UI** for easy user interaction  
+- 🔐 API keys securely managed via `.env`  
+- 🐳 Fully **Dockerized** for portability and cloud deployment  
+- ☁️ Cloud-ready (AWS, Render, Railway)
 
 ---
 
 ## 🏗️ Tech Stack
 
-| Layer | Technology |
-|-----|-----------
-| Programming Language | Python 3.10 
-| LLM Framework | LangChain 
-| LLM Provider | Cerebras (OpenAI-compatible API) 
-| Frontend UI | Streamlit 
+ Layer | Technology 
+-----|-----------
+ Programming Language | Python 3.10 
+ LLM Framework | LangChain 
+ LLM Provider | Cerebras (OpenAI-compatible API) 
+ Frontend UI | Streamlit 
  Environment Management | python-dotenv 
  Containerization | Docker 
- Deployment | Docker Hub 
+ Deployment | Docker Hub, Cloud (Render / AWS / Railway) 
 
 ---
 
@@ -55,13 +56,59 @@ The application is designed to be:
 ```text
 restaurant_name_generator/
 │
-├── app.py                   # Streamlit frontend
-├── langchain_helper.py      # LangChain & LLM logic
+├── app.py                   # Streamlit UI for user interaction
+├── langchain_helper.py      # LLM logic & LangChain prompt templates
 ├── requirements.txt         # Python dependencies
-├── .env.example             # Environment variable template
+├── .env.example             # Template for environment variables
 ├── screenshots/
 │   ├── home.png
 │   └── output.png
-├── Dockerfile
-└── README.md
+├── Dockerfile               # Container configuration
+└── README.md                # Project documentation
+```
+
+## 🔄 Application Workflow
+
+1.User selects a Cuisine
+2.Input is sent to LangChain prompt templates
+3.LLM generates a creative restaurant name
+4.Streamlit UI displays the result instantly
+
+## 🖥️ Application Screenshots
+🔹 Home Page
+
+🔹 Generated Restaurant Name
+
+## ⚙️ Run Locally (Without Docker)
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 🐳 Run Using Docker
+```bash
+Build Docker Image
+docker build -t restaurant-name-generator .
+```
+
+## Run Container
+``` bash
+docker run -p 8501:8501 --env-file .env restaurant-name-generator
+```
+
+## 🌐 Access Application
+
+Streamlit UI → http://localhost:8501
+
+## 🐳 Docker Hub
+```bash
+Pull pre-built Docker image:
+docker pull <your-dockerhub-username>/restaurant-name-generator
+docker run -p 8501:8501 --env-file .env <your-dockerhub-username>/restaurant-name-generator
+```
+
+## Stop container:
+```bash
+docker ps
+docker stop <container_id>
 ```
