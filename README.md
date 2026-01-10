@@ -88,12 +88,12 @@ streamlit run app.py
 ## 🐳 Run Using Docker
 ```bash
 Build Docker Image
-docker build -t restaurant-name-generator .
+docker build -t restaurant-ai .
 ```
 
 ## Run Container
 ``` bash
-docker run -p 8501:8501 --env-file .env restaurant-name-generator
+docker run -p 8501:8501 --env-file .env restaurant-ai
 ```
 
 ## 🌐 Access Application
@@ -101,10 +101,19 @@ docker run -p 8501:8501 --env-file .env restaurant-name-generator
 Streamlit UI → http://localhost:8501
 
 ## 🐳 Docker Hub
+The application is available as a pre-built Docker image on Docker Hub.
+
+👉 **Docker Hub Repository:**  
+https://hub.docker.com/r/aravindvojjala/restaurant-ai
+
+### Pull Image
 ```bash
-Pull pre-built Docker image:
-docker pull <your-dockerhub-username>/restaurant-name-generator
-docker run -p 8501:8501 --env-file .env <your-dockerhub-username>/restaurant-name-generator
+docker pull aravindvojjala/restaurant-ai
+```
+
+### Run Image
+```bash
+docker run -p 8000:8000 -p 8501:8501 aravindvojjala/restaurant-ai
 ```
 
 ## Stop container:
