@@ -70,12 +70,6 @@ restaurant_name_generator/
 ## 🔄 Application Workflow
 
 1. User selects a Cuisine
-2. Uploads a **leaf image**
-3. Streamlit sends the image to FastAPI
-4. CNN model performs inference
-5. Disease name & confidence score displayed
-
-1.
 2. Input is sent to LangChain prompt templates
 3. LLM generates a creative restaurant name
 4. Streamlit UI displays the result instantly
