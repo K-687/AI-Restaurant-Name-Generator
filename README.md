@@ -7,7 +7,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
 
 An **AI-powered web application** that generates **creative and fancy restaurant names** based on cuisine type.  
-Built to demonstrate **full-stack AI development skills**, **LLM integration**, and **production-ready deployment** using Docker.
+Built to demonstrate **AI development skills**, **LLM integration**, and **production-ready deployment** using Docker.
 
 ---
 
